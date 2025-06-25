@@ -8,8 +8,6 @@ export default class Inputclass extends Component {
             email:""
         }
     }
-
-
     update=(e)=>{
         this.setState({
             username:e.target.value
@@ -28,14 +26,10 @@ export default class Inputclass extends Component {
         return (
             <div>
                 <h1>Inputclass component</h1>
-
                 <input type='text' placeholder='enter name' onChange={this.update} />
                 <p>{this.state.username}</p>
-
-
                 <input type='email' placeholder='enter email' onChange={this.update1} />
                 <p>{this.state.email}</p>
-
             </div>
         )
     }
